@@ -1,7 +1,7 @@
 import requests
 
 # Paste your JWT token here (keep it private)
-jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNZW1iZXJJZCI6IjE2MTk3ODciLCJlbWFpbCI6Impvc2h1YXN1am8yQGdtYWlsLmNvbSIsIlZlcnNpb24iOiIxIiwiRGV2aWNlTG9naW5JZCI6IjI0MTExMDYyIiwibmJmIjoxNzQ3MTA3ODExLCJleHAiOjE3NDk2OTk4MTEsImlhdCI6MTc0NzEwNzgxMX0.Os-gg_765KN1iuP7MH69LWrCaCoB8rwZ74glkh4ev_o"
+jwt_token = ""
 
 def fetch_ranked_teams():
     url = "https://api.utrsports.net/v1/club/team-rating/top"
