@@ -1,7 +1,9 @@
+import os
+
 import requests
 
-# Paste your JWT token here (keep it private)
-jwt_token = ""
+# UTR login token: set the UTR_JWT environment variable; never commit it
+jwt_token = os.environ.get("UTR_JWT", "")
 
 def fetch_ranked_teams():
     url = "https://api.utrsports.net/v1/club/team-rating/top"

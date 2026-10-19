@@ -1,7 +1,9 @@
+import os
+
 import requests
 
-# Your JWT token (keep it private!)
-jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNZW1iZXJJZCI6IjE2MTk3ODciLCJlbWFpbCI6Impvc2h1YXN1am8yQGdtYWlsLmNvbSIsIlZlcnNpb24iOiIxIiwiRGV2aWNlTG9naW5JZCI6IjIzMDg4MTAxIiwibmJmIjoxNzQxMDQzODE3LCJleHAiOjE3NDM2MzU4MTcsImlhdCI6MTc0MTA0MzgxN30.-AB1iflZOrxiUVuSJqy_Ah7-6mdHtXByOHFgGIjZLwA"
+# UTR login token: set the UTR_JWT environment variable; never commit it
+jwt_token = os.environ.get("UTR_JWT", "")
 
 
 headers = {
